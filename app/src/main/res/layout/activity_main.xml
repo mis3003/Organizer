@@ -8,29 +8,42 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Weekly"
+        android:textColor="@color/blue"
+        android:background="@null"
+        android:textStyle="bold"
+        android:onClick="weeklyAction"
+        android:textSize="20sp"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp">
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/back"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/blue"
             android:background="@null"
             android:textStyle="bold"
             android:onClick="previousMonthAction"
             android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/monthYear"
+            android:id="@+id/monthYearTV"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="Listopad 2021"
+            android:text="Feb 2021"
             android:textSize="20sp"
             android:textAlignment="center"
             android:textColor="@color/black"/>
@@ -40,11 +53,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/forward"
-            android:textColor="@color/teal_700"
+            android:textColor="@color/blue"
             android:background="@null"
             android:textStyle="bold"
             android:onClick="nextMonthAction"
             android:textSize="20sp"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -56,60 +70,68 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nie"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Pon"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Wto"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Śro"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Czw"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Pią"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sob"
-            android:textColor="@color/black"
+            android:text="SUN"
+            android:textColor="@color/gray"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MON"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TUE"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="WED"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="THUR"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FRI"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAT"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+
     </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/calendarRecyclerView"
@@ -117,3 +139,16 @@
         android:layout_height="match_parent"/>
 
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
