@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="0dp"
         android:id="@+id/sign_up_icon"
-        android:src="@drawable/img"/>
+        android:src="@drawable/register"/>
 
     <LinearLayout
         android:layout_width="match_parent"
